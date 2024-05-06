@@ -20,7 +20,7 @@ commands = """
  Commands
 ================================================
  [0] - ⏩ Fast forward a month
- [1] - 👶🏿 Create a user
+ [1] - 🐥 Create a user
  [2] - 📜 List all users
  [3] - 📃 Create a loan
  [4] - 📜 List all loans
