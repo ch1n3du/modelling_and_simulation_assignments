@@ -1,0 +1,4 @@
+import modelling_and_simulation_assignments
+import sys
+
+sys.exit(modelling_and_simulation_assignments.main())
