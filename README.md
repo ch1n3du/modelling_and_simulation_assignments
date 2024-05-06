@@ -1,3 +1,6 @@
 # modelling-and-simulation-assignments
 
-Describe your project here.
+
+## assignment 01 (riba): program to model a loan management system
+
+![a screenshot of the riba cli.](./images/riba.png)
