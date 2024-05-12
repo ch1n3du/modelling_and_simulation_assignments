@@ -13,6 +13,7 @@ dependencies = [
     "ipykernel>=6.29.4",
     "jupyter>=1.0.0",
     "termplotlib>=0.3.9",
+    "marimo>=0.5.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

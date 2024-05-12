@@ -11,6 +11,7 @@
 anyio==4.3.0
     # via httpx
     # via jupyter-server
+    # via starlette
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -28,6 +29,8 @@ babel==2.15.0
     # via jupyterlab-server
 beautifulsoup4==4.12.3
     # via nbconvert
+black==24.4.2
+    # via marimo
 bleach==6.1.0
     # via nbconvert
 certifi==2024.2.2
@@ -38,6 +41,10 @@ cffi==1.16.0
     # via argon2-cffi-bindings
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via black
+    # via marimo
+    # via uvicorn
 comm==0.2.2
     # via ipykernel
     # via ipywidgets
@@ -51,6 +58,8 @@ decorator==5.1.1
     # via ipython
 defusedxml==0.7.1
     # via nbconvert
+docutils==0.21.2
+    # via marimo
 executing==2.0.1
     # via stack-data
 fastjsonschema==2.19.1
@@ -61,6 +70,7 @@ fqdn==1.5.1
     # via jsonschema
 h11==0.14.0
     # via httpcore
+    # via uvicorn
 httpcore==1.0.5
     # via httpx
 httpx==0.27.0
@@ -86,6 +96,7 @@ isoduration==20.11.0
     # via jsonschema
 jedi==0.19.1
     # via ipython
+    # via marimo
 jinja2==3.1.4
     # via jupyter-server
     # via jupyterlab
@@ -146,6 +157,11 @@ jupyterlab-widgets==3.0.10
     # via ipywidgets
 kiwisolver==1.4.5
     # via matplotlib
+marimo==0.5.2
+    # via modelling-and-simulation-assignments
+markdown==3.6
+    # via marimo
+    # via pymdown-extensions
 markupsafe==2.1.5
     # via jinja2
     # via nbconvert
@@ -156,6 +172,8 @@ matplotlib-inline==0.1.7
     # via ipython
 mistune==3.0.2
     # via nbconvert
+mypy-extensions==1.0.0
+    # via black
 nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.4
@@ -182,6 +200,7 @@ numpy==1.26.4
 overrides==7.7.0
     # via jupyter-server
 packaging==24.0
+    # via black
     # via ipykernel
     # via jupyter-server
     # via jupyterlab
@@ -194,11 +213,14 @@ pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.4
     # via jedi
+pathspec==0.12.1
+    # via black
 pexpect==4.9.0
     # via ipython
 pillow==10.3.0
     # via matplotlib
 platformdirs==4.2.1
+    # via black
     # via jupyter-core
 prometheus-client==0.20.0
     # via jupyter-server
@@ -207,6 +229,7 @@ prompt-toolkit==3.0.43
     # via jupyter-console
 psutil==5.9.8
     # via ipykernel
+    # via marimo
 ptyprocess==0.7.0
     # via pexpect
     # via terminado
@@ -217,8 +240,11 @@ pycparser==2.22
 pygments==2.18.0
     # via ipython
     # via jupyter-console
+    # via marimo
     # via nbconvert
     # via qtconsole
+pymdown-extensions==10.8.1
+    # via marimo
 pyparsing==3.1.2
     # via matplotlib
 pyqt6==6.7.0
@@ -235,6 +261,7 @@ python-json-logger==2.0.7
     # via jupyter-events
 pyyaml==6.0.1
     # via jupyter-events
+    # via pymdown-extensions
 pyzmq==26.0.3
     # via ipykernel
     # via jupyter-client
@@ -278,6 +305,8 @@ soupsieve==2.5
     # via beautifulsoup4
 stack-data==0.6.3
     # via ipython
+starlette==0.37.2
+    # via marimo
 terminado==0.18.1
     # via jupyter-server
     # via jupyter-server-terminals
@@ -287,6 +316,8 @@ threadpoolctl==3.5.0
     # via scikit-learn
 tinycss2==1.3.0
     # via nbconvert
+tomlkit==0.12.5
+    # via marimo
 tornado==6.4
     # via ipykernel
     # via jupyter-client
@@ -316,6 +347,8 @@ uri-template==1.3.0
     # via jsonschema
 urllib3==2.2.1
     # via requests
+uvicorn==0.29.0
+    # via marimo
 wcwidth==0.2.13
     # via prompt-toolkit
 webcolors==1.13
@@ -325,5 +358,7 @@ webencodings==0.5.1
     # via tinycss2
 websocket-client==1.8.0
     # via jupyter-server
+websockets==12.0
+    # via marimo
 widgetsnbextension==4.0.10
     # via ipywidgets

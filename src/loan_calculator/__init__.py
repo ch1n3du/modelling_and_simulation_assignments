@@ -307,4 +307,5 @@ def main():
         command = Command(command_code)
 
         interpreter.interpret_command(command)
+    return 0
 
